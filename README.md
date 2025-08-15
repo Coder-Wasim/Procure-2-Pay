@@ -87,7 +87,11 @@ The dashboard uses two CSV files:
 
 ---
 
-## Screenshot
+## Screenshots
 
-![Spend Analysis Dashboard](https://github.com/Coder-Wasim/Procure-2-Pay/blob/main/Spend%20Analysis.png)
+### Spend Analysis
+![Spend Analysis](https://raw.githubusercontent.com/Coder-Wasim/Procure-2-Pay/main/Spend%20Analysis.png)
+
+### Discount Analysis
+![Discount Analysis](https://raw.githubusercontent.com/Coder-Wasim/Procure-2-Pay/main/Discount%20Analysis.png)
 
