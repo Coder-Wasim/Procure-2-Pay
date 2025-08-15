@@ -1,9 +1,7 @@
-# Procure-2-Pay
-Here’s a clean **README draft** you can drop into your repo:
+# Procure-2-Pay(Invoice Management & Discount Optimization Dashboard)
 
 ---
 
-# Invoice Management & Discount Optimization Dashboard
 
 ## 📊 Overview
 
