@@ -1,71 +1,49 @@
 # Procure-2-Pay
-Perfect idea — a **README.md** makes your Power BI project look professional on GitHub.
-Here’s a clean, no-fluff template you can adapt for your **Vendor-Level Spend & Volume Dashboard**.
+Here’s a clean **README draft** you can drop into your repo:
 
 ---
 
-# Vendor Spend & Volume Dashboard (Power BI)
+# Invoice Management & Discount Optimization Dashboard
 
-## 📌 Overview
+## 📊 Overview
 
-This Power BI dashboard analyzes **Procure-to-Pay (P2P) invoice data** to evaluate vendor spend and invoice patterns.
-The goal is to provide finance and procurement teams with clear visibility into **vendor performance, concentration, and spending trends**.
-
----
-
-## 📂 Dataset
-
-The dashboard uses two CSV files:
-
-1. **Invoice.csv**
-
-   * InvoiceID
-   * VendorID
-   * LocationID
-   * InvoiceDateID
-   * Discount Days / Percent
-   * Payment Terms Days
-   * Payment Status
-
-2. **Invoice Line Item.csv**
-
-   * InvoiceID
-   * ItemID
-   * Line Item Quantity
-   * Unit Price
-   * Invoice Amount (in local and converted currency)
-   * Exchange Rate
-   * Savings
+This repository contains a **Power BI dashboard** that provides actionable insights into **invoice management, discount optimization, and vendor performance**. It visualizes critical procurement and finance metrics, making it a valuable tool for **financial analysts, procurement teams, and business decision-makers**.
 
 ---
 
-## 📊 Key Insights
+## 🚀 Features
 
-### 1. Vendor-Level Spend & Volume
+### Key Visualizations
 
-* **Total Spend by Vendor** (sum of all invoice amounts)
-* **Number of Invoices per Vendor** (distinct count of invoices)
-* **Average Invoice Value** (total spend ÷ invoice count)
-* **Top 10 Vendors by Spend** (Pareto view of vendor concentration)
-* **Spend Trend Over Time by Vendor** (monthly or quarterly trend using Date table)
-
----
-
-## ⚙️ Data Model
-
-* `Invoice[InvoiceID]` → `Invoice Line Item[InvoiceID]` (1-to-Many)
-* `Invoice[InvoiceDateID]` → `Date[DateID]` (Many-to-1)
+* **Total Invoice & Discount Trends**: Bar + line chart showing monthly invoice amounts and discount percentages (Jan–Dec).
+* **Vendor Analysis**: Vendor-level metrics (discount %, invoice amounts, savings) for suppliers like Digelonics LLC, Freshdox Corporation, Kantax Corporation, Mathgreen Inc, and Soloware LLC.
+* **Discounts Offered vs Captured**: \$8.4M offered vs \$2.91M captured, highlighting utilization gaps.
+* **Capture Rate & Discounts Lost**: Gauge chart showing 34.37% capture rate and \$5.56M lost discounts.
+* **Discount Savings by Month**: Area chart tracking month-over-month discount savings.
+* **From Invoice Value to Discounts Captured**: Funnel chart showing flow from 100% invoice value → 1.64% discounts offered → 0.54% captured.
+* **Invoice Count & Amount**: 115K invoices worth \$517.34M, with \$24.75M in returns.
+* **Invoice Status Breakdown**: Pie chart + table split into paid, pending, overdue, with vendor-level drilldowns.
+* **Category-Wise Invoice Amounts**: Bar chart showing direct vs indirect spend distribution.
 
 ---
 
+## 📈 Metrics at a Glance
 
-## 📈 Visuals
+* **Total Invoices**: 115,000
+* **Total Invoice Amount**: \$517.34M
+* **Return Invoice Amount**: (\$24.75M)
+* **Discounts Offered**: \$8.4M
+* **Discounts Captured**: \$2.91M
+* **Capture Rate**: 34.37%
+* **Discounts Lost**: \$5.56M
 
-* **Bar Chart**: Total Spend by Vendor
-* **Column Chart**: Number of Invoices per Vendor
-* **Table / Column Chart**: Average Invoice Value
-* **Bar Chart (Top N)**: Top 10 Vendors by Spend
-* **Line Chart**: Spend Trend by Vendor Over Time
+---
+
+## 📌 Usage
+
+1. Download or clone this repository.
+2. Open `Dashboard.pbix` in **Power BI Desktop**.
+3. Refresh data sources and customize visuals as needed.
 
 ---
 
@@ -75,15 +53,6 @@ The dashboard uses two CSV files:
 * Incorporate **PO & GR data** for 3-way match compliance
 * Include **Dispute Tracking** for vendor dispute rate metric
 * Build **Composite Vendor Scorecard** (0–100) once more data sources are available
-
----
-
-## 📌 How to Use
-
-1. Clone this repository
-2. Open the `.pbix` file in Power BI Desktop
-3. Connect to `Invoice.csv` and `Invoice Line Item.csv`
-4. Refresh the dashboard
 
 ---
 
